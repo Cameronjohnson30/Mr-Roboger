@@ -5,8 +5,11 @@ $(document).ready(function(){
     for(const i in newArray){}
     newArray.forEach(function(i) {
       i = i.toString();
-      if (i == 3 || i.indexOf('3') > -1) {
+    if (i == 3 || i.indexOf('3') > -1) {
         newArray[i] = 'Wont you be my neighbor?'
+      } 
+    else if (i == 2 || i.indexOf('2') > -1) {
+        newArray[i] = 'Boop!'
       }
     });
     return newArray
