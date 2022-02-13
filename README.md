@@ -20,7 +20,7 @@ _This website displays a submit form that returns the users number input in an a
 # Describe: beepBoop()
 
 Test: "It should return an array of numbers from 0 to the user's inputted number"
-Code: beepBoop(5);
+Code: newArray(5);
 Expected Output: [0, 1, 2, 3, 4, 5]
 
 ## Setup/Installation Requirements
