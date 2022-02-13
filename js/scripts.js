@@ -11,12 +11,18 @@ $(document).ready(function(){
       else if (i == 2 || i.indexOf('2') > -1) {
         newArray[i] = 'Boop!'
       }    
-      if(i == 1 || i.indexOf('1') > -1) {
+      else if(i == 1 || i.indexOf('1') > -1) {
         newArray[i] = 'Beep!'
       } 
     });
     return newArray
   }
+
+
+$("#clear").click(function () {
+  $("#result").html("");
+});
+
   $("#userInput").submit(function(e) {
     e.preventDefault()
     let userInput = parseInt($('#userNum').val()) + 1;
@@ -24,4 +30,5 @@ $(document).ready(function(){
     $('#result').html(result.toString())
   });
 });
+
 
