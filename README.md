@@ -31,6 +31,11 @@ Expectected Output: [0, 1, 2, 'Wont you be my neighbor?' 4, 5]
 Test: "Test: "It Should return a string to replace inputed 2"
 Code: newArray(5);
 Expectected Output: [0, 1, "Boop!", 3, 4, 5]
+
+Test: "Test: "It Should return a string to replace inputed 1"
+Code: newArray(5);
+Expectected Output: [0, "Beep!", 2, 3, 4, 5]
+
 ## Setup/Installation Requirements
 
 _Clone or download the repository to your desktop._

@@ -5,12 +5,15 @@ $(document).ready(function(){
     for(const i in newArray){}
     newArray.forEach(function(i) {
       i = i.toString();
-    if (i == 3 || i.indexOf('3') > -1) {
+      if (i == 3 || i.indexOf('3') > -1) {
         newArray[i] = 'Wont you be my neighbor?'
-      } 
-    else if (i == 2 || i.indexOf('2') > -1) {
+      }   
+      else if (i == 2 || i.indexOf('2') > -1) {
         newArray[i] = 'Boop!'
-      }
+      }    
+      if(i == 1 || i.indexOf('1') > -1) {
+        newArray[i] = 'Beep!'
+      } 
     });
     return newArray
   }
@@ -21,3 +24,4 @@ $(document).ready(function(){
     $('#result').html(result.toString())
   });
 });
+
