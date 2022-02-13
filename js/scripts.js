@@ -2,7 +2,14 @@
 $(document).ready(function(){
   function range(userNum){
     const newArray = [...Array(userNum).keys()];
-  console.log(newArray);
+    for(const i in newArray){}
+    newArray.forEach(function(i) {
+      i = i.toString();
+      if (i == 3 || i.indexOf('3') > -1) {
+        newArray[i] = 'Wont you be my neighbor?'
+      }
+    });
+    return newArray
   }
   $("#userInput").submit(function(e) {
     e.preventDefault()
@@ -11,4 +18,3 @@ $(document).ready(function(){
     $('#result').html(result.toString())
   });
 });
-
