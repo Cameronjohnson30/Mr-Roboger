@@ -1,8 +1,9 @@
 
+//buisness logic
 $(document).ready(function(){
   function range(userNum){
     const newArray = [...Array(userNum).keys()];
-    for(const i in newArray){}
+    for(const _i in newArray){}
     newArray.forEach(function(i) {
       i = i.toString();
       if (i == 3 || i.indexOf('3') > -1) {
@@ -13,16 +14,17 @@ $(document).ready(function(){
       }    
       else if(i == 1 || i.indexOf('1') > -1) {
         newArray[i] = 'Beep!'
-      } 
+      }
     });
     return newArray
   }
 
-
+  // ui logic-------
 $("#clear").click(function () {
   $("#result").html("");
+  $("#userNum").val("");
 });
-
+//user number input
   $("#userInput").submit(function(e) {
     e.preventDefault()
     let userInput = parseInt($('#userNum').val()) + 1;
@@ -30,5 +32,3 @@ $("#clear").click(function () {
     $('#result').html(result.toString())
   });
 });
-
-

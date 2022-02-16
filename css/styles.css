@@ -1,4 +1,28 @@
 body {
-  background-color: rgb(202, 9, 9);
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  background-color: rgb(155, 152, 152);
   font-size: 30px;
+}
+img {
+  float: right;
+}
+#userInput{
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+#clear {
+  color: crimson;
+  background-color: bisque;
+}
+.btn {
+  font-size: 30px;
+  background-color: indianred;
+  display: block;
+  height: 100px;
+  width: 100px;
+  border-radius: 50%;
+  border: 1px solid red;
+}
+.container {
+  text-align: center;
+  padding-bottom: 50px;
 }
