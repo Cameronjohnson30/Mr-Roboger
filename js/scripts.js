@@ -1,34 +1,44 @@
-
 //buisness logic
-$(document).ready(function(){
-  function range(userNum){
-    const newArray = [...Array(userNum).keys()];
-    for(const _i in newArray){}
-    newArray.forEach(function(i) {
+function range(userInput) {
+  const results = [...Array(userInput).keys()];
+  for(const i in results) {
+    results.forEach(function(i) {
       i = i.toString();
       if (i == 3 || i.indexOf('3') > -1) {
-        newArray[i] = 'Wont you be my neighbor?'
+        results[i] = 'Wont you be my neighbor?'
       }   
       else if (i == 2 || i.indexOf('2') > -1) {
-        newArray[i] = 'Boop!'
+        results[i] = 'Boop!'
       }    
       else if(i == 1 || i.indexOf('1') > -1) {
-        newArray[i] = 'Beep!'
-      }
+        results[i] = 'Beep!'
+      };
     });
-    return newArray
-  }
+    return results.toString()
+  };
+};
 
-  // ui logic-------
-$("#clear").click(function () {
-  $("#result").html("");
-  $("#userNum").val("");
-});
-//user number input
-  $("#userInput").submit(function(e) {
+//Ui Logic
+function returnResults() {
+  $("#userInput").submit((e) => {
     e.preventDefault()
-    let userInput = parseInt($('#userNum').val()) + 1;
-    let result = range(userInput);
-    $('#result').html(result.toString())
+    value = $('#userNum').val()
+    userInput = parseInt(value) + 1;
+    results = range(userInput)
+    return $('#result').html(results)
   });
+}
+
+// clear form
+function clearForm() {
+  $('#clear').click(() => {
+    $("#result").html("");
+    $("#userNum").val("");
+  });
+}
+
+// lets run the code
+$(document).ready(() => {
+  returnResults()
+  clearForm();
 });

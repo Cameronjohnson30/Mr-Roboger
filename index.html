@@ -9,19 +9,26 @@
   </head>
   <body>
     <div class="container">
-      <h1>Mr Roboger's fun calculator </h1>
-    </div>   
-    <form id="userInput">
-      <div class="form-group">
-        <p>Please input a number</p>
-        <input id="userNum" name="userNum" class="form-control"></input>
-        <button type="submit" class="btn">Enter</button>
+      <div class="row">
+        <div class="col-12">          
+        </div>
       </div>
-    </form>
-    <div>
-      <p>Results: <span id="result"></span></p>
-    </div>
-      <h3><img src="img/mr rogers.jpeg" alt="Picture of Mr. Roger next to a robot"></h3>
-    <button id="clear">Clear results</button>  
+      <div class="jumbotron">
+        <h1>Mr Roboger's fun calculator </h1>
+        <p class="lead"><img src="img/mr rogers.jpeg" class="rounded-circle"  alt="Picture of Mr. Roger next to a robot"></p>
+        <hr class="my-4">
+        <p id="result"></p>
+        <p class="lead">
+          <form id="userInput">
+            <div class="form-group robo-form">
+              <p>Please input a number</p>
+              <input id="userNum" name="userNum" class="form-control"></input>
+              <button type="submit" class="btn btn-primary">Enter</button>
+              <button id="clear" type="button" class="btn btn-danger">Clear</button>  
+            </div>
+          </form>
+        </p>
+      </div>
+    </div>   
   </body>
 </html>

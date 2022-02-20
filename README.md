@@ -20,20 +20,23 @@ _This website displays a submit form that returns the users number input in an a
 # Describe: userNum()
 
 Test: "It should return an array of numbers from 0 to the user's inputted number"
-Code: newArray(5);
+Code: range(5);
 Expected Output: [0, 1, 2, 3, 4, 5]
+
+
+-- dont need to describe the forEAch
 
 # Describe: forEach
 Test: "It Should return a string to replace inputed 3"
-Code: newArray(5);
+Code: range(5);
 Expectected Output: [0, 1, 2, 'Wont you be my neighbor?' 4, 5]
 
 Test: "Test: "It Should return a string to replace inputed 2"
-Code: newArray(5);
+Code: range(5);
 Expectected Output: [0, 1, "Boop!", 3, 4, 5]
 
 Test: "Test: "It Should return a string to replace inputed 1"
-Code: newArray(5);
+Code: range(5);
 Expectected Output: [0, "Beep!", 2, 3, 4, 5]
 
 ## Setup/Installation Requirements
